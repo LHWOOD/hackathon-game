@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  width: 100vw;
+}
+
+img {
+  float: left;
+  max-width: 50vw;
+  height: auto;
+}
+
+.about {
+  float: right;
+  line-height: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .about {
+    line-height: 20px;
+  }
+}

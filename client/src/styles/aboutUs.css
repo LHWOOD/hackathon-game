@@ -1,0 +1,23 @@
+.creators {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  position: relative;
+  padding-top: 100px;
+}
+
+.creatorOne,
+.creatorTwo {
+  width: 49vw;
+}
+
+img {
+  width: 250px;
+  height: 260px;
+}
+.pOne,
+.pTwo {
+  display: flex;
+  flex-direction: column;
+  width: 45vw;
+}

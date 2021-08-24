@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  background-color: gray;
+  position: fixed;
+  top: 0;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+li {
+  cursor: pointer;
+}
+
+li:hover {
+  color: green;
+}
