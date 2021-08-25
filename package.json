@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/LHWOOD/hackathon-game#readme",
   "dependencies": {
-    "concurrently": "^6.2.1"
+    "concurrently": "^6.2.1",
+    "react-router-dom": "^5.2.0"
   }
 }
