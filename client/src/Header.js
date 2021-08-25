@@ -1,4 +1,5 @@
 import React from "react";
+import Form from "./Form";
 import "./styles/header.css";
 
 function Header(props) {
@@ -7,7 +8,9 @@ function Header(props) {
       <ul>
         <li>Home</li>
         <li>about</li>
-        <li>contact</li>
+        <li>
+          <Form />
+        </li>
       </ul>
     </div>
   );
