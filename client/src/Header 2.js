@@ -7,7 +7,7 @@ function Header(props) {
       <ul>
         <li>Home</li>
         <li>about</li>
-        <li>contact</li>
+        <li>sign in</li>
       </ul>
     </div>
   );
