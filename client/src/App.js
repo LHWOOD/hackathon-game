@@ -4,6 +4,7 @@ import AboutGame from "./aboutGame";
 import AboutUs from "./AboutUs";
 import Footer from "./Footer";
 import Game from "./game/Game";
+import Form from "./Form";
 import { Route } from "react-router-dom";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Footer />
       </Route>
       <Route path="/game" component={Game} />
+      <Route path="/form" component={Form} />
     </div>
   );
 }
