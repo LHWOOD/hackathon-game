@@ -6,7 +6,7 @@ class Form extends React.Component {
   render() {
     return (
       <div>
-        <form></form>
+        <form>hello</form>
       </div>
     );
   }
