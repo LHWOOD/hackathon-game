@@ -20,27 +20,22 @@ class Game extends React.Component {
     setInterval(() => {
       if (this.state.jumping === 0) {
         birdFall++;
+        this.setState({ birdPosition: birdFall });
+        character.style.top = birdFall + "px";
+      } else {
+        birdFall -= 20;
+        this.setState({ birdPosition: birdFall });
         character.style.top = birdFall + "px";
       }
-    }, 100);
+    }, 10);
   }
-
   //jumping function
   jump = (event) => {
     this.setState({ jumping: 1 });
-    let jumpCount = 0;
-    setInterval(() => {
-      let birdJump = this.state.birdPosition;
-      birdJump -= 5;
-      if (jumpCount > 20) {
-        clearInterval(jumpCount);
-        jumpCount = 0;
-        console.log("greater than 20");
-      }
-      jumpCount++;
-      this.setState({ birdPosition: birdJump });
+
+    setTimeout(() => {
       this.setState({ jumping: 0 });
-    }, 100);
+    }, 20);
   };
 
   render() {
