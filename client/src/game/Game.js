@@ -1,4 +1,5 @@
 import React from "react";
+import GameOver from "./GameOver";
 import "./game.css";
 
 class Game extends React.Component {
@@ -10,17 +11,13 @@ class Game extends React.Component {
     blockPosition: 100,
     holePosition: 0,
     score: 0,
+    gameOver: false,
   };
-
+  intervalScore = 0;
   componentDidMount() {
     const hole = document.getElementById("hole");
     const character = document.getElementById("character");
     const block = document.getElementById("block");
-
-    setInterval(() => {
-      this.setState({ score: this.state.score + 1 });
-    }, 100);
-    console.log(this.state.score);
 
     // creates the hole in a random position
     hole.addEventListener("animationiteration", () => {
@@ -29,11 +26,14 @@ class Game extends React.Component {
       hole.style.top = random + "px";
     });
 
-    //hit detections
-
+    this.intervalScore = setInterval(() => {
+      let playerScore = this.state.score;
+      this.setState({ score: playerScore + 1 });
+      console.log(this.state.score);
+    }, 1000);
     //gravity simulator
     let birdFall = this.state.birdPosition;
-    setInterval(() => {
+    this.start = setInterval(() => {
       //hit detection
       const blockLeft = window.getComputedStyle(block).getPropertyValue("left");
       const holeTop = parseInt(
@@ -51,6 +51,7 @@ class Game extends React.Component {
         this.setState({ birdPosition: birdFall });
         character.style.top = birdFall + "px";
       }
+      //hit detections
       if (
         this.state.birdPosition > 470 ||
         (this.state.blockPosition < 20 && this.state.blockPosition > -50)
@@ -59,9 +60,10 @@ class Game extends React.Component {
           this.state.birdPosition < this.state.holePosition + 500 ||
           this.state.birdPosition > this.state.holePosition + 650
         ) {
-          alert("game over");
+          this.setState({ gameOver: true });
         }
       }
+      console.log(this.state.score);
     }, 10);
   }
 
@@ -78,16 +80,22 @@ class Game extends React.Component {
   };
 
   render() {
-    return (
-      <div id="game" onClick={this.jump}>
-        <div id="block"></div>
-        <div id="hole"></div>
-        <div id="character" style={{ top: `${this.state.birdPosition}px` }}>
-          <div id="wing1"></div>
-          <div id="wing2"></div>
+    let win_loss = this.state.gameOver;
+    if (win_loss) {
+      clearInterval(this.intervalScore);
+      const score = this.state.score;
+      return <GameOver score={score} />;
+    } else
+      return (
+        <div id="game" onClick={this.jump}>
+          <div id="block"></div>
+          <div id="hole"></div>
+          <div id="character" style={{ top: `${this.state.birdPosition}px` }}>
+            <div id="wing1"></div>
+            <div id="wing2"></div>
+          </div>
         </div>
-      </div>
-    );
+      );
   }
 }
 
