@@ -11,5 +11,6 @@ const seedDataBase = async () => {
 
   process.exit(0);
 };
+//test
 
 seedDataBase();
