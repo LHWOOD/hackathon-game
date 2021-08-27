@@ -16,22 +16,46 @@
   margin: auto;
   overflow: hidden;
 }
+
+/* #sliding_background {
+  z-index: -1;
+  background-image: url("../images/gameSky.jpg");
+
+  width: 10000px;
+  background-color: tomato;
+  overflow: hidden;
+  background-size: contain;
+  background-repeat: repeat-x;
+  position: relative;
+  bottom: 0;
+  animation: background 25s infinite linear;
+} */
+
 #block {
   width: 50px;
   height: 500px;
   background-color: black;
   position: relative;
   left: 400px;
-  animation: block 2s infinite linear;
+  animation: block 4s infinite linear;
 }
 @keyframes block {
   0% {
-    left: 400px;
+    right: 0px;
   }
   100% {
-    left: -50px;
+    left: -500px;
   }
 }
+
+/* @keyframes background {
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: -1000px;
+  }
+} */
 
 #hole {
   width: 50px;
@@ -40,7 +64,7 @@
   position: relative;
   left: 400px;
   top: -500px;
-  animation: block 2s infinite linear;
+  animation: block 4s infinite linear;
 }
 
 #character {

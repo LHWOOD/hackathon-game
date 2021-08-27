@@ -9,7 +9,10 @@ function Header(props) {
         <li>Home</li>
         <li>about</li>
         <li>
-          <Form />
+          <a href="http://localhost:3000/game">Quick Play</a>
+        </li>
+        <li>
+          <a href="http://localhost:3000/form">Sign In</a>
         </li>
       </ul>
     </div>

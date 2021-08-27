@@ -63,7 +63,6 @@ class Game extends React.Component {
           this.setState({ gameOver: true });
         }
       }
-      console.log(this.state.score);
     }, 10);
   }
 
@@ -88,8 +87,10 @@ class Game extends React.Component {
     } else
       return (
         <div id="game" onClick={this.jump}>
+          {/* <div id="sliding_background"></div> */}
           <div id="block"></div>
           <div id="hole"></div>
+
           <div id="character" style={{ top: `${this.state.birdPosition}px` }}>
             <div id="wing1"></div>
             <div id="wing2"></div>
