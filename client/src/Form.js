@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./styles/form.css";
 
 // function Signup(props) {
@@ -87,11 +87,11 @@ class Form extends React.Component {
   }
 
   async handleSubmit(event) {
-    alert("A name was submitted: " + this.state.value);
+    // alert("A name was submitted: " + this.state.value);
     event.preventDefault();
     const name = this.state.value;
 
-    await fetch(`/api/`, {
+    await fetch(`3000/api/user`, {
       method: "POST",
       body: JSON.stringify({
         name,
@@ -106,14 +106,22 @@ class Form extends React.Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <label>
-          Name:
+        <label id="userName">
+          User Name:
           <input
             type="text"
             value={this.state.value}
             onChange={this.handleChange}
           />
         </label>
+        {/* <label id="password">
+          Password:
+          <input
+            type="text"
+            value={this.state.value}
+            onChange={this.handleChange}
+          />
+        </label> */}
         <input type="submit" value="Submit" />
       </form>
     );
