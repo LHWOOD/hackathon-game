@@ -17,14 +17,12 @@ router.get("/", (req, res) => {
 
 //create user //tested all good
 router.post("/", (req, res) => {
+  console.log(req);
   User.create({
     username: req.body.username,
   })
     .then((userData) => {
-      // req.session.save(() => {
-      //   req.session.user_id = userData.id;
-      //   req.session.username = userData.username;
-      //   req.session.loggIn = true;
+      console.log(userData);
       res.json(userData);
     })
     .catch((err) => {

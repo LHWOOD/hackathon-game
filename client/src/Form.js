@@ -91,7 +91,7 @@ class Form extends React.Component {
     event.preventDefault();
     const name = this.state.value;
 
-    await fetch(`http://localhost:3001/api/user`, {
+    await fetch(`http://localhost:3001/api/users`, {
       method: "POST",
       body: JSON.stringify({
         name,
