@@ -1,0 +1,68 @@
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+#formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  padding: 1%;
+  box-shadow: 10px 10px 20px rgb(70, 66, 66);
+  background-color: white;
+}
+
+#loginHeader {
+  font-size: 32px;
+  color: #1877f2;
+}
+
+#login-btn {
+  display: flex;
+  margin-top: 10px;
+  width: 100px;
+  height: 25px;
+  background-color: #1877f2;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  margin: 15px;
+  width: 200px;
+  height: 35px;
+  border-radius: 5px;
+}
+
+#signup-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 200px;
+  border-radius: 10px;
+  margin-top: 30px;
+  background-color: #42b72a;
+}
+
+#signup-btn:hover {
+  height: 50px;
+  width: 230px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+#login-btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
