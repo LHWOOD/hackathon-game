@@ -67,7 +67,7 @@ class Game extends React.Component {
 
   //jumping function
   jump = () => {
-    // const wingOne = document.getElementById("wing1");
+    // const wingOne = document.getElementById("wing1" );
     // const wingTwo = document.getElementById("wing2");
     // wingOne.style.display = "inline-block";
     // wingTwo.style.display = "none";
