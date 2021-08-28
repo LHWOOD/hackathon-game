@@ -7,7 +7,7 @@ function aboutGame(props) {
     <div className="container">
       <img src={gameimg} alt="game" />
       <div className="about">
-        <h3>Flappy Bird</h3>
+        <h3>Flappy Jet</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
