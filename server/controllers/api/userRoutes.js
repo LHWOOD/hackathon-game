@@ -17,7 +17,7 @@ router.get("/", (req, res) => {
 
 //create user //tested all good
 router.post("/", (req, res) => {
-  console.log(req);
+  // console.log(req);
   User.create({
     username: req.body.username,
   })

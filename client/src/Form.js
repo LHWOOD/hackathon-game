@@ -89,18 +89,18 @@ class Form extends React.Component {
   async handleSubmit(event) {
     // alert("A name was submitted: " + this.state.value);
     event.preventDefault();
-    const name = this.state.value;
+    const username = this.state.value;
 
     await fetch(`http://localhost:3001/api/users`, {
       method: "POST",
       body: JSON.stringify({
-        name,
+        username,
       }),
       headers: {
         "Content-Type": "application/json",
       },
     });
-    console.log(name);
+    console.log(username);
   }
 
   render() {
