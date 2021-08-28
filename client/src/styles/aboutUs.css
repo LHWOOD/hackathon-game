@@ -8,16 +8,36 @@
 
 .creatorOne,
 .creatorTwo {
+  display: flex;
+  justify-content: center;
   width: 49vw;
 }
 
 img {
-  width: 250px;
-  height: 260px;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+
+.image {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 .pOne,
 .pTwo {
   display: flex;
   flex-direction: column;
   width: 45vw;
+}
+
+.links {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 20px;
+  margin-top: 10px;
+}
+
+.aboutUs {
+  margin-top: 10px;
+  padding-bottom: 40px;
 }

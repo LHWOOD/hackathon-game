@@ -29,7 +29,6 @@ class Game extends React.Component {
     this.intervalScore = setInterval(() => {
       let playerScore = this.state.score;
       this.setState({ score: playerScore + 1 });
-      console.log(this.state.score);
     }, 10);
     //gravity simulator
     let birdFall = this.state.birdPosition;
@@ -53,11 +52,11 @@ class Game extends React.Component {
       //hit detections
       if (
         this.state.birdPosition > 470 ||
-        (this.state.blockPosition < 40 && this.state.blockPosition > 10)
+        (this.state.blockPosition < 40 && this.state.blockPosition > -30)
       ) {
         if (
-          this.state.birdPosition < this.state.holePosition + 495 ||
-          this.state.birdPosition > this.state.holePosition + 600
+          this.state.birdPosition < this.state.holePosition + 500 ||
+          this.state.birdPosition > this.state.holePosition + 650
         ) {
           this.setState({ gameOver: true });
         }
@@ -85,6 +84,8 @@ class Game extends React.Component {
           <div id="game" onClick={this.jump}>
             <span>Score: </span>
             <span id="score"> {this.state.score}</span>
+            <hr />
+
             <div id="block"></div>
             <div id="hole"></div>
             <div

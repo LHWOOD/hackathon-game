@@ -6,7 +6,7 @@ function Header(props) {
     <div className="header">
       <ul>
         <li>Home</li>
-        <li>About</li>
+        <li href=".creators">About</li>
         <li>
           <a href="http://localhost:3000/game">Quick Play</a>
         </li>

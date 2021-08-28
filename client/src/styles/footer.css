@@ -1,5 +1,13 @@
 .footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   width: 100vw;
-  height: 40px;
+  height: 60px;
   background-color: gray;
+}
+
+a,
+i {
+  align-self: center;
 }

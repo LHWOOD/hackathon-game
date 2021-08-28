@@ -8,9 +8,16 @@ function AboutUs() {
     <div className="creators">
       <div className="creatorOne">
         <div className="pOne">
-          <img alt="Nathan" src={nathan} />
-
-          <p>
+          <img alt="Nathan" src={nathan} className="ui rounded image" />
+          <div className="links">
+            <a href="https://github.com/nbrailsford" target="_blank">
+              <i className="git square icon"></i>
+            </a>
+            <a href="https://www.linkedin.com/feed/" target="_blank">
+              <i className="linkedin icon"></i>
+            </a>
+          </div>
+          <p className="aboutUs">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Posuere
             urna nec tincidunt praesent semper feugiat nibh.
@@ -19,9 +26,20 @@ function AboutUs() {
       </div>
       <div className="creatorTwo">
         <div className="pTwo">
-          <img alt="Hutson" src={hutson} />
+          <img alt="Hutson" src={hutson} className="ui rounded image" />
+          <div className="links">
+            <a href="https://github.com/LHWOOD/" target="_blank">
+              <i className="git square icon"></i>
+            </a>
 
-          <p>
+            <a
+              href="https://www.linkedin.com/in/hutson-wood-92566b50/"
+              target="_blank"
+            >
+              <i className="linkedin icon"></i>
+            </a>
+          </div>
+          <p className="aboutUs">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Posuere
             urna nec tincidunt praesent semper feugiat nibh.

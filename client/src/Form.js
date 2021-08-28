@@ -107,11 +107,8 @@ class Form extends React.Component {
     return (
       <form onSubmit={this.handleSubmit}>
         <label id="userName">
-          User Name:
-          <input
-            type="text"
-            value={this.state.value}
-            onChange={this.handleChange}
+          User Name: type="text" value={this.state.value}
+          onChange={this.handleChange}
           />
         </label>
         {/* <label id="password">
