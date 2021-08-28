@@ -30,11 +30,10 @@ class Game extends React.Component {
       let playerScore = this.state.score;
       this.setState({ score: playerScore + 1 });
       console.log(this.state.score);
-    }, 1000);
+    }, 10);
     //gravity simulator
     let birdFall = this.state.birdPosition;
     this.start = setInterval(() => {
-      //hit detection
       const blockLeft = window.getComputedStyle(block).getPropertyValue("left");
       const holeTop = parseInt(
         window.getComputedStyle(hole).getPropertyValue("top")
@@ -54,11 +53,11 @@ class Game extends React.Component {
       //hit detections
       if (
         this.state.birdPosition > 470 ||
-        (this.state.blockPosition < 20 && this.state.blockPosition > -50)
+        (this.state.blockPosition < 40 && this.state.blockPosition > 10)
       ) {
         if (
-          this.state.birdPosition < this.state.holePosition + 500 ||
-          this.state.birdPosition > this.state.holePosition + 650
+          this.state.birdPosition < this.state.holePosition + 495 ||
+          this.state.birdPosition > this.state.holePosition + 600
         ) {
           this.setState({ gameOver: true });
         }
@@ -68,10 +67,6 @@ class Game extends React.Component {
 
   //jumping function
   jump = () => {
-    // const wingOne = document.getElementById("wing1" );
-    // const wingTwo = document.getElementById("wing2");
-    // wingOne.style.display = "inline-block";
-    // wingTwo.style.display = "none";
     this.setState({ jumping: 1 });
     setTimeout(() => {
       this.setState({ jumping: 0 });
@@ -86,14 +81,16 @@ class Game extends React.Component {
       return <GameOver score={score} />;
     } else
       return (
-        <div id="game" onClick={this.jump}>
-          {/* <div id="sliding_background"></div> */}
-          <div id="block"></div>
-          <div id="hole"></div>
-
-          <div id="character" style={{ top: `${this.state.birdPosition}px` }}>
-            <div id="wing1"></div>
-            <div id="wing2"></div>
+        <div>
+          <div id="game" onClick={this.jump}>
+            <span>Score: </span>
+            <span id="score"> {this.state.score}</span>
+            <div id="block"></div>
+            <div id="hole"></div>
+            <div
+              id="character"
+              style={{ top: `${this.state.birdPosition}px` }}
+            ></div>
           </div>
         </div>
       );

@@ -15,21 +15,8 @@
   border: 1px solid black;
   margin: auto;
   overflow: hidden;
+  background: #0c50a6;
 }
-
-/* #sliding_background {
-  z-index: -1;
-  background-image: url("../images/gameSky.jpg");
-
-  width: 10000px;
-  background-color: tomato;
-  overflow: hidden;
-  background-size: contain;
-  background-repeat: repeat-x;
-  position: relative;
-  bottom: 0;
-  animation: background 25s infinite linear;
-} */
 
 #block {
   width: 50px;
@@ -37,34 +24,25 @@
   background-color: black;
   position: relative;
   left: 400px;
-  animation: block 4s infinite linear;
+  animation: block 2s infinite linear;
 }
 @keyframes block {
   0% {
-    right: 0px;
+    right: 400px;
   }
   100% {
-    left: -500px;
+    left: -50px;
   }
 }
-
-/* @keyframes background {
-  0% {
-    left: 0px;
-  }
-  100% {
-    left: -1000px;
-  }
-} */
 
 #hole {
   width: 50px;
   height: 150px;
-  background-color: white;
+  background: #0c50a6;
   position: relative;
   left: 400px;
   top: -500px;
-  animation: block 4s infinite linear;
+  animation: block 2s infinite linear;
 }
 
 #character {
@@ -74,22 +52,14 @@
   position: absolute;
   top: 100px;
   border-radius: 50%;
+  clip-path: ellipse(50% 34% at 50% 50%);
 }
 
-/* #wing1 {
-  background-color: blue;
-  clip-path: polygon(11% 47%, 100% 46%, 90% 100%, 0% 100%);
-
-  width: 40px;
-  height: 20px;
-  position: relative;
-  top: 20px;
-  left: 2px;
+#score {
+  align-self: center;
+  width: 30px;
+  height: 15px;
+  border-radius: 30px;
+  color: black;
+  background-color: white;
 }
-
-#wing2 {
-  background-color: lightblue;
-  width: 40px;
-  height: 20px;
-  clip-path: polygon(11% 47%, 100% 48%, 91% 0, 0 0);
-} */

@@ -1,5 +1,4 @@
 import React from "react";
-import Form from "./Form";
 import "./styles/header.css";
 
 function Header(props) {
@@ -7,7 +6,7 @@ function Header(props) {
     <div className="header">
       <ul>
         <li>Home</li>
-        <li>about</li>
+        <li>About</li>
         <li>
           <a href="http://localhost:3000/game">Quick Play</a>
         </li>
