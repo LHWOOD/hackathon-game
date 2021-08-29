@@ -1,23 +1,43 @@
 import React from "react";
 import "./gameOver.css";
 
-function GameOver(props) {
-  // const score = props.score;
+// await fetch(`http://localhost:3001/api/users/${username}`, {
+//   method: "GET",
+//   body: JSON.stringify({
+//     username,
+//   }),
+//   headers: {
+//     "Content-Type": "application/json",
+//   },
+// });
+// console.log(username);
 
-  // fetch(`http://localhost:3001/api/users/1`, {
-  //   method: "PUT",
-  //   body: JSON.stringify({
-  //     score,
-  //   }),
-  //   headers: {
-  //     "Content-Type": "application/json",
-  //   },
-  // });
+function GameOver(props) {
+  // async function highscore() {
+  //   const score = props.score;
+  //   const username = props.username;
+
+  //   await fetch(`http://localhost:3001/api/users/${username}`, {
+  //     method: "PUT",
+  //     body: JSON.stringify({
+  //       score,
+  //     }),
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //   });
+  //   console.log(score);
+  // }
+  // highscore();
+
+  // const username = props.username;
+  // console.log(username);
 
   return (
     <div className="gameOver">
       <h1>Game Over</h1>
       <h2> Your score: {props.score}</h2>
+
       <div className="buttons">
         <button
           className="ui left attached button"

@@ -29,6 +29,7 @@ class Form extends React.Component {
       },
     });
     console.log(username);
+    window.location.href = "http://localhost:3000/game";
   }
 
   render() {
@@ -45,21 +46,8 @@ class Form extends React.Component {
             />
           </label>
 
-          <input type="submit" value="Submit" />
+          <input type="submit" value="Submit" href="/game" />
         </form>
-        {/* 
-        <h2>Sign up for first time users</h2>
-        <form onSubmit={this.handleSubmit} id="signup">
-          <label id="signup">
-            User Name:{" "}
-            <input
-              type="text"
-              value={this.state.value}
-              onChange={this.handleChangeS}
-            />
-          </label>
-          <input type="submit" value="Submit" />
-        </form> */}
       </>
     );
   }
