@@ -1,5 +1,5 @@
 import React from "react";
-import gameimg from "./images/game.jpg";
+import gameimg from "./images/game.gif";
 import "./styles/aboutGame.css";
 
 function aboutGame(props) {
