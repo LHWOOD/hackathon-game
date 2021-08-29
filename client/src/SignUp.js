@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles/form.css";
 
-class Form extends React.Component {
+class SignUp extends React.Component {
   constructor(props) {
     super(props);
     this.state = { value: "" };
@@ -19,7 +19,7 @@ class Form extends React.Component {
     event.preventDefault();
     const username = this.state.value;
 
-    await fetch(`http://localhost:3001/api/users/login`, {
+    await fetch(`http://localhost:3001/api/users/`, {
       method: "POST",
       body: JSON.stringify({
         username,
@@ -34,8 +34,8 @@ class Form extends React.Component {
   render() {
     return (
       <>
-        <h2>Login to play!</h2>
-        <form onSubmit={this.handleSubmit} id="login">
+        <h2>Sign up to play!</h2>
+        <form onSubmit={this.handleSubmit} id="signup">
           <label>
             User Name:{" "}
             <input
@@ -65,4 +65,4 @@ class Form extends React.Component {
   }
 }
 
-export default Form;
+export default SignUp;

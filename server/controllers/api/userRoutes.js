@@ -80,7 +80,7 @@ router.post("/login", (req, res) => {
   }).then((userData) => {
     if (!userData) {
       res.status(400).json({
-        message: "No user with that usernam",
+        message: "No user with that username",
       });
       return;
     }
