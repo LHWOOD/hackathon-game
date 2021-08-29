@@ -10,10 +10,6 @@ function Footer() {
       <i className="react icon"></i>
       <i className="html5 icon"></i>
       <i className="js square icon"></i>
-
-      <a href="https://github.com/LHWOOD/hackathon-game">
-        <i class="code icon"></i>
-      </a>
     </div>
   );
 }
