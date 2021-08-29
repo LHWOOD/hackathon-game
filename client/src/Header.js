@@ -5,8 +5,8 @@ function Header(props) {
   return (
     <div className="header">
       <ul>
-        <li>Home</li>
-        <li>About</li>
+        {/* <li>Home</li>
+        <li href="#aboutUs">About</li> */}
         <li>
           <a href="http://localhost:3000/game">Quick Play</a>
         </li>

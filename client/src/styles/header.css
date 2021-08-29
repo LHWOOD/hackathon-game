@@ -4,9 +4,11 @@
   align-content: center;
   width: 100vw;
   height: 50px;
-  background-color: gray;
+  background-color: #7d99b4;
   position: fixed;
   top: 0;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 ul {
@@ -23,7 +25,7 @@ li {
 
 li:hover,
 a:hover {
-  color: green;
+  color: #0c50a6;
 }
 
 a {

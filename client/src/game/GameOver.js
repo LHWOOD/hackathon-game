@@ -20,7 +20,7 @@ function GameOver(props) {
       <h2> Your score: {props.score}</h2>
       <div className="buttons">
         <button
-          class="ui left attached button"
+          className="ui left attached button"
           type="button"
           onClick={(e) => {
             e.preventDefault();
@@ -30,7 +30,7 @@ function GameOver(props) {
           Home
         </button>
         <button
-          class="right attached ui button"
+          className="right attached ui button"
           type="button"
           onClick={(e) => {
             e.preventDefault();

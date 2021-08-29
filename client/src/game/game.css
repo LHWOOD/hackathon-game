@@ -46,20 +46,41 @@
 }
 
 #character {
+  background-image: url(../images/airplane.png);
   width: 50px;
   height: 50px;
   background-color: red;
+  border-radius: 50%;
+  clip-path: polygon(
+    12% 9%,
+    69% 33%,
+    100% 43%,
+    70% 60%,
+    0 100%,
+    24% 61%,
+    0 55%,
+    0 45%,
+    22% 35%
+  );
+
   position: absolute;
   top: 100px;
-  border-radius: 50%;
-  clip-path: ellipse(50% 34% at 50% 50%);
 }
 
 #score {
+  margin: 5px;
   align-self: center;
-  width: 30px;
+  width: 100px;
   height: 15px;
-  border-radius: 30px;
+  border-radius: 10px;
   color: black;
   background-color: white;
 }
+
+span {
+  color: white;
+}
+
+/*Lets start with the cloud formation rather*/
+
+/*The container will also serve as the SKY*/

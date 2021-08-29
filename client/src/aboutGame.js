@@ -1,19 +1,23 @@
 import React from "react";
-import gameimg from "./images/game.jpg";
+import gameimg from "./images/game.gif";
 import "./styles/aboutGame.css";
 
 function aboutGame(props) {
   return (
     <div className="container">
       <img src={gameimg} alt="game" />
+
       <div className="about">
-        <h3>Flappy Bird</h3>
+        <h3>Flappy Jet</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          Developed with SQL.Sequelize, Express, React.js, and Node.js by Nathan
+          Brailsford and Hutson Wood. Flappy jet is our version of "Flappy
+          Bird". While the jet is falling, click the game screen to have the jet
+          go up and fly through the openings.
         </p>
+        <a href="https://github.com/LHWOOD/hackathon-game">
+          <i class="code icon"></i>
+        </a>
       </div>
     </div>
   );
