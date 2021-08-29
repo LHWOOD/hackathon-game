@@ -11,11 +11,11 @@ router.get("/", (req, res) => {
     });
 });
 
-//get one user //test all good
-router.get("/:id", (req, res) => {
+//get one user by name //test all good
+router.get("/:username", (req, res) => {
   User.findOne({
     where: {
-      id: req.params.id,
+      username: req.params.username,
     },
   })
     .then((userData) => {
@@ -50,15 +50,15 @@ router.post("/", (req, res) => {
 });
 
 //update score //test all good for individual score
-router.put("/:id", (req, res) => {
-  console.log(req);
+router.put("/:username", (req, res) => {
+  // console.log(req);
   User.update(
     {
       score: req.body.score,
     },
     {
       where: {
-        id: req.params.id,
+        username: req.params.username,
       },
     }
   )
@@ -80,7 +80,7 @@ router.post("/login", (req, res) => {
   }).then((userData) => {
     if (!userData) {
       res.status(400).json({
-        message: "No user with that usernam",
+        message: "No user with that username",
       });
       return;
     }
