@@ -80,7 +80,7 @@ router.put("/:username", (req, res) => {
     },
     {
       where: {
-        id: req.params.username,
+        username: req.params.username,
       },
     }
   )
