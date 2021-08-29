@@ -11,28 +11,6 @@ router.get("/", (req, res) => {
     });
 });
 
-//get one user //test all good
-// router.get("/:id", (req, res) => {
-//   User.findOne({
-//     where: {
-//       id: req.params.id,
-//     },
-//   })
-//     .then((userData) => {
-//       if (!userData) {
-//         res.status(404).json({
-//           message: "No user found",
-//         });
-//         return;
-//       }
-//       res.json(userData);
-//     })
-//     .catch((err) => {
-//       console.log(err);
-//       res.status(500).json(err);
-//     });
-// });
-
 //get one user by name //test all good
 router.get("/:username", (req, res) => {
   User.findOne({
@@ -73,7 +51,7 @@ router.post("/", (req, res) => {
 
 //update score //test all good for individual score
 router.put("/:username", (req, res) => {
-  console.log(req);
+  // console.log(req);
   User.update(
     {
       score: req.body.score,

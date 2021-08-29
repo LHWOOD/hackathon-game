@@ -13,25 +13,23 @@ import "./gameOver.css";
 // console.log(username);
 
 function GameOver(props) {
-  // async function highscore() {
-  //   const score = props.score;
-  //   const username = props.username;
+  async function highscore() {
+    const score = props.score;
+    // const username = props.username;
 
-  //   await fetch(`http://localhost:3001/api/users/${username}`, {
-  //     method: "PUT",
-  //     body: JSON.stringify({
-  //       score,
-  //     }),
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //     },
-  //   });
-  //   console.log(score);
-  // }
+    await fetch(`http://localhost:3001/api/users/JohnDoe`, {
+      method: "PUT",
+      body: JSON.stringify({
+        score,
+      }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+  }
   // highscore();
 
-  // const username = props.username;
-  // console.log(username);
+  // console.log(props.score);
 
   return (
     <div className="gameOver">
