@@ -2,6 +2,18 @@ import React from "react";
 import "./gameOver.css";
 
 function GameOver(props) {
+  // const score = props.score;
+
+  // fetch(`http://localhost:3001/api/users/1`, {
+  //   method: "PUT",
+  //   body: JSON.stringify({
+  //     score,
+  //   }),
+  //   headers: {
+  //     "Content-Type": "application/json",
+  //   },
+  // });
+
   return (
     <div className="gameOver">
       <h1>Game Over</h1>
