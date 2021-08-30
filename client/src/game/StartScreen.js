@@ -1,0 +1,25 @@
+import React from "react";
+import Game from "./Game";
+import StartImage from "../images/startScreen.jpg";
+import "./startScreen.css";
+
+class StartScreen extends React.Component {
+  state = { startGame: false };
+
+  handleSubmit = () => {
+    this.setState({ startGame: true });
+  };
+
+  render() {
+    if (this.state.startGame) {
+      return <Game />;
+    } else
+      return (
+        <div id="gameImage" onClick={this.handleSubmit}>
+          <img src={StartImage} alt="Start game" />
+        </div>
+      );
+  }
+}
+
+export default StartScreen;
