@@ -38,13 +38,8 @@ function AboutUs() {
           <div className="links">
             <a
               href="https://github.com/LHWOOD/"
-<<<<<<< HEAD
               target="_blank"
               rel="noreferrer"
-=======
-              rel="noreferrer"
-              target="_blank"
->>>>>>> main
             >
               <i className="git square icon"></i>
             </a>
