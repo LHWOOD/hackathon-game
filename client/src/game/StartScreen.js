@@ -12,13 +12,14 @@ class StartScreen extends React.Component {
 
   render() {
     if (this.state.startGame) {
-      return <Game />;
-    } else
-      return (
-        <div id="gameImage" onClick={this.handleSubmit}>
-          <img src={StartImage} alt="Start game" />
-        </div>
-      );
+      return <Game name={this.props.name} />;
+    } else console.log(this.props.name);
+
+    return (
+      <div id="gameImage" onClick={this.handleSubmit}>
+        <img src={StartImage} alt="Start game" />
+      </div>
+    );
   }
 }
 

@@ -36,8 +36,7 @@ class Form extends React.Component {
 
   render() {
     if (this.state.submitted) {
-      return <StartScreen />;
-      // return <Game name={this.state.value} />;
+      return <StartScreen name={this.state.value} />;
     } else
       return (
         <>
