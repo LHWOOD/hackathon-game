@@ -13,6 +13,9 @@ function Header(props) {
         <li>
           <a href="http://localhost:3000/form">Sign In</a>
         </li>
+        <li>
+          <a href="http://localhost:3000/signup">Sign Up</a>
+        </li>
       </ul>
     </div>
   );
