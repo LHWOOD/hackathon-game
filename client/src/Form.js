@@ -1,10 +1,15 @@
 import React from "react";
+//import Game from "./game/Game";
 import "./styles/form.css";
+<<<<<<< HEAD
+import StartScreen from "./game/StartScreen";
+=======
+>>>>>>> main
 
 class Form extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { value: "" };
+    this.state = { value: "", submitted: false };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -18,7 +23,11 @@ class Form extends React.Component {
     // alert("A name was submitted: " + this.state.value);
     event.preventDefault();
     const username = this.state.value;
+<<<<<<< HEAD
+    this.setState({ submitted: true });
+=======
 
+>>>>>>> main
     await fetch(`http://localhost:3001/api/users/login`, {
       method: "POST",
       body: JSON.stringify({
@@ -33,6 +42,28 @@ class Form extends React.Component {
   }
 
   render() {
+<<<<<<< HEAD
+    if (this.state.submitted) {
+      return <StartScreen name={this.state.value} />;
+    } else
+      return (
+        <>
+          <h2>Login to play!</h2>
+          <form onSubmit={this.handleSubmit} id="login">
+            <label>
+              User Name:{" "}
+              <input
+                type="text"
+                value={this.state.value}
+                onChange={this.handleChange}
+              />
+            </label>
+
+            <input type="submit" value="Submit" href="/game" />
+          </form>
+        </>
+      );
+=======
     return (
       <>
         <h2>Login to play!</h2>
@@ -50,6 +81,7 @@ class Form extends React.Component {
         </form>
       </>
     );
+>>>>>>> main
   }
 }
 

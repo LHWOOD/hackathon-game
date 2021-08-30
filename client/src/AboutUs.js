@@ -10,10 +10,18 @@ function AboutUs() {
         <div className="pOne">
           <img alt="Nathan" src={nathan} className="ui rounded image" />
           <div className="links">
-            <a href="https://github.com/nbrailsford" target="_blank">
+            <a
+              href="https://github.com/nbrailsford"
+              target="_blank"
+              rel="noreferrer"
+            >
               <i className="git square icon"></i>
             </a>
-            <a href="https://www.linkedin.com/feed/" target="_blank">
+            <a
+              href="https://www.linkedin.com/feed/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <i className="linkedin icon"></i>
             </a>
           </div>
@@ -28,13 +36,23 @@ function AboutUs() {
         <div className="pTwo">
           <img alt="Hutson" src={hutson} className="ui rounded image" />
           <div className="links">
-            <a href="https://github.com/LHWOOD/" target="_blank">
+            <a
+              href="https://github.com/LHWOOD/"
+<<<<<<< HEAD
+              target="_blank"
+              rel="noreferrer"
+=======
+              rel="noreferrer"
+              target="_blank"
+>>>>>>> main
+            >
               <i className="git square icon"></i>
             </a>
 
             <a
               href="https://www.linkedin.com/in/hutson-wood-92566b50/"
               target="_blank"
+              rel="noreferrer"
             >
               <i className="linkedin icon"></i>
             </a>

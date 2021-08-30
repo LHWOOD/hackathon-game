@@ -13,6 +13,7 @@ class Game extends React.Component {
     score: 0,
     gameOver: false,
   };
+
   intervalScore = 0;
   componentDidMount() {
     const hole = document.getElementById("hole");
@@ -62,6 +63,7 @@ class Game extends React.Component {
         }
       }
     }, 10);
+    console.log(this.props.name);
   }
 
   //jumping function
@@ -82,10 +84,9 @@ class Game extends React.Component {
       return (
         <div>
           <div id="game" onClick={this.jump}>
-            <span>Score: </span>
+            <span>{this.props.name} Score: </span>
             <span id="score"> {this.state.score}</span>
             <hr />
-
             <div id="block"></div>
             <div id="hole"></div>
             <div
