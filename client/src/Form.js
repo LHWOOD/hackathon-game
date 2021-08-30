@@ -31,7 +31,7 @@ class Form extends React.Component {
       },
     });
     console.log(username);
-    window.location.href = "http://localhost:3000/game";
+    // window.location.href = "http://localhost:3000/game";
   }
 
   render() {

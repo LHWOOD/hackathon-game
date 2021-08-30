@@ -79,7 +79,8 @@ class Game extends React.Component {
     if (win_loss) {
       clearInterval(this.intervalScore);
       const score = this.state.score;
-      return <GameOver score={score} />;
+      const name = this.props.name;
+      return <GameOver score={score} name={name} />;
     } else
       return (
         <div>
