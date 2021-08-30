@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles/aboutUs.css";
 import nathan from "./images/nathan.jpg";
-import hutson from "./images/hutson.jpg";
+import hutson from "./images/LHW.jpg";
 
 function AboutUs() {
   return (
@@ -53,9 +53,9 @@ function AboutUs() {
             </a>
           </div>
           <p className="aboutUs">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Posuere
-            urna nec tincidunt praesent semper feugiat nibh.
+            Hutson is a full stack web developer with a background in project
+            management and customer service. Known for a customer first approach
+            and strong team partnership when solving problems.
           </p>
         </div>
       </div>

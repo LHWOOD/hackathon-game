@@ -10,10 +10,10 @@ function aboutGame(props) {
       <div className="about">
         <h3>Flappy Jet</h3>
         <p>
-          Developed with SQL.Sequelize, Express, React.js, and Node.js by Nathan
-          Brailsford and Hutson Wood. Flappy jet is our version of "Flappy
-          Bird". While the jet is falling, click the game screen to have the jet
-          go up and fly through the openings.
+          Developed with MySQL/Sequelize, Express, React.js, and Node.js by
+          Nathan Brailsford and Hutson Wood. Flappy jet is our version of
+          "Flappy Bird". While the jet is falling, click the game screen to have
+          the jet go up and fly through the openings.
         </p>
         <a href="https://github.com/LHWOOD/hackathon-game">
           <i class="code icon"></i>
