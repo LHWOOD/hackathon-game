@@ -24,11 +24,15 @@ This SERN (MySQL, Express, React, Node.js) stack game application is our entry t
 
 Installation requirments to run locally include Node.js, React.js, Express.js, Cors, MySQL/Sequelize.
 
+First, run NPM install and then NPM start to launch the application. Then go to your web browser at localhost:3000 for the landing page and start of the game.
+
 ## Usage
 
 Upon launching the game, simply fly your plane (by using mouse clicks) through the openings in the blocks!
 
 ![gamegif](client/src/images/game.gif))
+
+Game site URL: https://hacka-game.herokuapp.com/
 
 ## Contributing
 
