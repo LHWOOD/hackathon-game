@@ -4,7 +4,7 @@
 
 ## Description
 
-Our entry to for the Mintbean full stack web game hackathon
+This SERN (MySQL, Express, React, Node.js) stack game application is our entry to the Mintbean Junior Web Dev Hackathon.
 
 ## Table of Contents
 
@@ -22,19 +22,21 @@ Our entry to for the Mintbean full stack web game hackathon
 
 ## Installation
 
-TBD
+Installation requirments to run locally include Node.js, React.js, Express.js, Cors, MySQL/Sequelize.
 
 ## Usage
 
-TBD
+Upon launching the game, simple fly your plane (by using mouse clicks) through the openings in the blocks!
+
+![gamegif](client/src/images/game.gif))
 
 ## Contributing
 
-Please feel free to contribute to future versions of this game
+Please feel free to contribute to future versions of this game!
 
 ## Tests
 
-N/A
+No testing has been utilized for version 1.0
 
 ## License
 
