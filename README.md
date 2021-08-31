@@ -26,7 +26,7 @@ Installation requirments to run locally include Node.js, React.js, Express.js, C
 
 ## Usage
 
-Upon launching the game, simple fly your plane (by using mouse clicks) through the openings in the blocks!
+Upon launching the game, simply fly your plane (by using mouse clicks) through the openings in the blocks!
 
 ![gamegif](client/src/images/game.gif))
 
